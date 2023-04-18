@@ -101,10 +101,16 @@ async function fetchArticle({ id: articleId }) {
 }
 
 (async () => {
+  // Fetch all collections
   const collections = await fetchCollections();
+
+  // Fetch all the articles in all collections
   const articles = await fetchAllArticles(collections);
 
+  // Back up collection json to data/collections
   await backupCollections(collections);
+
+  // Back up articles json to data/articles
   await backupArticles(articles);
 
   console.log('Done.');
