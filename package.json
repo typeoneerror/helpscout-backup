@@ -1,0 +1,16 @@
+{
+  "name": "helpscout-backup",
+  "version": "1.0.0",
+  "description": "Backup our helpscout docs",
+  "main": "index.js",
+  "author": "Benjamin Borowski <ben@weareokidoki.com>",
+  "license": "",
+  "dependencies": {
+    "async-sema": "^3.1.1",
+    "axios": "^1.2.2",
+    "dotenv": "^16.0.1"
+  },
+  "devDependencies": {
+    "prettier": "2.7.1"
+  }
+}
